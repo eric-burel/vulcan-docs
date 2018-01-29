@@ -37,7 +37,7 @@ We are doing five things here:
 
 Note that it is recommended that you pick a **different** name for the "real" database field (`userId`) and the field in your schema (`user`), especially if you set `addOriginalField` to `true`. This way, you will be able to unambiguously require either the `_id` or the full user object just by specifying which field you need. 
 
-Also, the resolved type is a GraphQL type, not a primitive type or a schema. Therefore, it must necessarilly be a string (`'User'` in the previous example). If you rather need an array of user, the resolved type will be `'[User]'`. For primitive types, you must provide the name as a string, instead of the constructor : `'Date'` for a `Date`, `'String'` for a `String` etc.
+Also, the resolved type is a GraphQL type, not a primitive type or a schema. Therefore, it must necessarilly be a string (`'User'` in the previous example). If you rather need an array of user, the resolved type will be `'[User]'`. For primitive types, you must provide the name as a string, instead of the constructor : `'Date'` for a `Date`, `'String'` for a `String`, `'JSON'` for an `Object` etc.
 
 
 ## Custom Types
